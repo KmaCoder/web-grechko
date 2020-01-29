@@ -1,0 +1,79 @@
+Error: Text not allowed in element iframe in this context.
+
+From line 32, column 1; to line 32, column 45
+
+th="500">↩    Your browser does not support HTML5 tags.↩  </i
+
+Content model for element iframe:
+Nothing.
+Error: Bad value 10:00-18:00 for attribute datetime on element time: The literal did not satisfy the time-datetime format.
+
+From line 101, column 3; to line 101, column 31
+
+>↩<div>↩  <time datetime="10:00-18:00">10:00-
+
+Error: The width attribute on the table element is obsolete. Use CSS instead.
+
+From line 116, column 3; to line 116, column 36
+
+ки</h3>↩  <table width="500px" border="1px">↩    <
+
+Error: The border attribute on the table element is obsolete. Use CSS instead.
+
+From line 116, column 3; to line 116, column 36
+
+ки</h3>↩  <table width="500px" border="1px">↩    <
+
+Warning: A table row was 4 columns wide, which is less than the column count established by the first row (8).
+
+From line 131, column 19; to line 132, column 9
+
+d>700</td>↩    </tr>↩    <
+
+Warning: A table row was 4 columns wide, which is less than the column count established by the first row (8).
+
+From line 137, column 20; to line 138, column 9
+
+>1000</td>↩    </tr>↩    <
+
+Warning: A table row was 4 columns wide, which is less than the column count established by the first row (8).
+
+From line 143, column 19; to line 144, column 9
+
+d>500</td>↩    </tr>↩    <
+
+Warning: A table row was 4 columns wide, which is less than the column count established by the first row (8).
+
+From line 149, column 19; to line 150, column 9
+
+d>900</td>↩    </tr>↩    <
+
+Warning: A table row was 4 columns wide, which is less than the column count established by the first row (8).
+
+From line 155, column 19; to line 156, column 9
+
+d>700</td>↩    </tr>↩    <
+
+Warning: A table row was 4 columns wide, which is less than the column count established by the first row (8).
+
+From line 161, column 20; to line 162, column 9
+
+>1100</td>↩    </tr>↩    <
+
+Error: Table column 6 established by element th has no cells beginning in it.
+
+From line 121, column 34; to line 122, column 22
+
+оходи</th>↩      <th colspan="2">Витрат
+
+Error: Table column 8 established by element th has no cells beginning in it.
+
+From line 122, column 35; to line 123, column 22
+
+трати</th>↩      <th colspan="2">Прибут
+
+Warning: The date input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.
+
+From line 215, column 9; to line 215, column 47
+
+у↩        <input type="date" name="request-date">↩

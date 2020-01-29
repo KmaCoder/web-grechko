@@ -80,3 +80,121 @@ nav li a:visited {
   border: 1px solid #000000;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
+
+.column-33 {
+  width: 33.33%;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.column-50 {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.row-top, .row-2 {
+  margin: 20px 0;
+}
+
+.overflow-div {
+  overflow-y: scroll;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  width: 400px;
+  height: 300px;
+}
+
+.div-with-bg {
+  background: url("/images/nyancat.jpg") no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 10px;
+  border: 1px solid cyan;
+}
+
+.gazeta-div {
+  padding: 50px;
+  margin-bottom: 20px;
+  column-count: 4;
+  column-gap: 20px;
+  text-align: justify;
+}
+
+.form-button {
+  padding: 20px;
+}
+
+.form-button:disabled {
+  opacity: 0.5;
+}
+
+.task-8-div {
+  padding: 40px;
+  width: 100%;
+  max-width: 700px;
+  font-family: 'Bangers', cursive;
+}
+
+.task-8-div {
+  float: right;
+}
+
+.task-9-h3 {
+  text-shadow: 1px 1px 2px black;
+}
+
+.task-10 {
+  padding: 25px;
+  margin: 40px 0;
+  border: 1px solid black;
+}
+
+.task-10-col {
+  width: 33.33%;
+  padding: 10px;
+}
+
+.task-10-col:first-child {
+  background: greenyellow;
+  border-radius: 10px;
+}
+
+.task-10-col:nth-child(2) {
+  background: url("/images/nyan-small.jpeg") repeat;
+}
+
+.task-10-col:nth-child(3) {
+  background: linear-gradient(green 0%, yellow 30%, blue 100%);
+}
+
+.task-14 div {
+  padding: 50px;
+  transition-duration: 0.2s;
+}
+
+.task-14 div:nth-child(1):hover {
+  transform: translateY(15px);
+}
+
+.task-14 div:nth-child(2):hover {
+  transform: rotate(359deg);
+}
+
+.task-14 div:nth-child(3):hover {
+  transform: scale(1.4);
+}
+
+.task-15  {
+  margin: 50px;
+  width: 100px;
+  height: 100px;
+  background: pink;
+  transition-duration: 0.2s;
+}
+
+.task-15:hover {
+  width: 200px;
+}

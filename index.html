@@ -52,14 +52,17 @@
   </div>
   <div class="row-2 section">
     <div class="column-50">
-      <iframe src="https://www.epam-group.ru/" width="100%" height="400px">
+      <iframe src="https://www.epam-group.ru/" width="100%" height="450px">
         Your browser does not support HTML5 tags.
       </iframe>
     </div>
     <div class="column-50">
-      <video controls width="100%" height="400px">
+      <video controls width="100%">
         <source src="files/nyancat.mp4" type="audio/mp3">
       </video>
+      <audio controls>
+        <source src="files/Nyanyanyanyanyanyanya.mp3" type="audio/mp3">
+      </audio>
     </div>
   </div>
   <div class="section">
@@ -250,6 +253,10 @@
     <div>Scale</div>
     <div class="task-15"></div>
   </div>
+  <div class="section">
+    <h3>Canvas:</h3>
+    <canvas id="canvas" width="500" height="300" border="1"></canvas>
+  </div>
   <div id="contact-block" class="section">
     <h3>Контакти</h3>
     <form accept-charset="UTF-8">
@@ -325,19 +332,11 @@
           <input type="url" name="user-url" placeholder="Веб-сторінка">
         </label>
         <p contenteditable="true">Редагований текст</p>
-        <input type="submit" value="Надіслати запит">
+        <button type="submit">Надіслати запит</button>
         <button class="form-button" disabled>Відміна</button>
         <button class="form-button">Зберегти</button>
       </fieldset>
     </form>
-    <div>
-      <audio controls>
-        <source src="files/Nyanyanyanyanyanyanya.mp3" type="audio/mp3">
-      </audio>
-    </div>
-    <div>
-      <canvas id="canvas" width="500" height="300" border="1px"></canvas>
-    </div>
     <details>
       <summary>&copy; Нестеров, 2020</summary>
       <p>All Rights Reserved.</p>

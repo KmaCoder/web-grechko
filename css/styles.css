@@ -1,16 +1,37 @@
+body {
+  font-family: sans-serif;
+}
+
+html, body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1270px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .large-font {
   font-size: 1.5em;
-  background: #ced5db;
+  background: #e4ebf2;
 }
 
 .middle-font {
   font-size: 18px;
-  background: rgb(189, 195, 201);
+  background: #e4ebf2;
 }
 
 #small-font {
-  font-size: 70%;
-  background: grey;
+  font-size: 80%;
+  background: #e4ebf2;
 }
 
 .first-big-letter:first-letter {
@@ -18,14 +39,18 @@
   color: #771918
 }
 
+#hero-block {
+  text-align: center;
+}
+
 #services-block li {
-  color: #008700;
-  background: grey;
+  color: rgba(0, 0, 0, 1);
+  background: #e4ebf2;
 }
 
 #services-more-block dt {
   color: #daba0a;
-  background: #ffef92;
+  background: #e4ebf2;
 }
 
 #services-more-block dd {
@@ -39,7 +64,10 @@
 }
 
 .section {
-  margin-bottom: 50px;
+  padding: 20px;
+  margin: 50px 0;
+  background: #fdfdfd;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -50,7 +78,8 @@ nav {
 
 h3 {
   color: #52134f;
-  background: #e6c9f0;
+  background: #f3e0f9;
+  padding: 10px;
 }
 
 nav li a {
@@ -77,47 +106,51 @@ nav li a:visited {
 }
 
 #customers-block {
-  border: 1px solid #000000;
+  border: 0 solid #000000;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .column-33 {
-  width: 33.33%;
-  padding: 20px;
+  flex: 0 0 33.33%;
   border: 1px solid black;
 }
 
 .column-50 {
-  width: 50%;
-  padding: 20px;
+  flex: 0 0 50%;
   border: 1px solid black;
 }
 
 .row-top, .row-2 {
-  margin: 20px 0;
+  display: flex;
 }
 
 .overflow-div {
   overflow-y: scroll;
-  padding: 20px;
-  margin: 20px;
   border: 1px solid black;
-  width: 400px;
+  max-width: 500px;
+  width: 100%;
+  padding: 15px;
   height: 300px;
+  margin: 0 auto;
+}
+
+figure {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .div-with-bg {
-  background: url("/images/nyancat.jpg") no-repeat fixed;
+  background: url("../images/nyancat.jpg") no-repeat fixed;
   background-size: cover;
   width: 100%;
-  padding: 30px;
-  margin-bottom: 10px;
-  border: 1px solid cyan;
+  border: 1px solid black;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .gazeta-div {
-  padding: 50px;
-  margin-bottom: 20px;
   column-count: 4;
   column-gap: 20px;
   text-align: justify;
@@ -132,47 +165,50 @@ nav li a:visited {
 }
 
 .task-8-div {
-  padding: 40px;
   width: 100%;
-  max-width: 700px;
+  max-width: 100%;
   font-family: 'Bangers', cursive;
 }
 
-.task-8-div {
-  float: right;
+.task-8-div img {
+  float: left;
+  width: 250px;
+  padding: 0 10px 10px 0;
 }
 
 .task-9-h3 {
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px deeppink;
 }
 
 .task-10 {
-  padding: 25px;
-  margin: 40px 0;
   border: 1px solid black;
+  display: flex;
 }
 
 .task-10-col {
-  width: 33.33%;
-  padding: 10px;
+  flex: 0 0 33%;
 }
 
 .task-10-col:first-child {
   background: greenyellow;
   border-radius: 10px;
+  padding: 15px;
 }
 
 .task-10-col:nth-child(2) {
-  background: url("/images/nyan-small.jpeg") repeat;
+  background: url("../images/nyan-small.jpeg") repeat;
+  padding: 15px;
 }
 
 .task-10-col:nth-child(3) {
   background: linear-gradient(green 0%, yellow 30%, blue 100%);
+  padding: 15px;
 }
 
 .task-14 div {
-  padding: 50px;
   transition-duration: 0.2s;
+  padding: 20px;
+  display: inline-block;
 }
 
 .task-14 div:nth-child(1):hover {
@@ -180,15 +216,14 @@ nav li a:visited {
 }
 
 .task-14 div:nth-child(2):hover {
-  transform: rotate(359deg);
+  transform: rotate(20deg);
 }
 
 .task-14 div:nth-child(3):hover {
   transform: scale(1.4);
 }
 
-.task-15  {
-  margin: 50px;
+.task-15 {
   width: 100px;
   height: 100px;
   background: pink;
@@ -197,4 +232,24 @@ nav li a:visited {
 
 .task-15:hover {
   width: 200px;
+  height: 200px;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+form input[type=text], form textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #b4b4b4;
+}
+
+form input[type=text] {
+  height: 40px;
 }

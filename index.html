@@ -5,10 +5,11 @@
   <!-- meta -->
   <meta charset="UTF-8">
   <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <!-- body -->
 <body>
-<div id="hero-block">
+<div id="hero-block" class="section">
   <h1>Назва Компанії</h1>
   <img src="/images/img1.tif" alt="" width="355" height="355">
   <h2>Слоган компанії</h2>
@@ -27,27 +28,27 @@
     <li><a href="#contact-block">Контакти</a></li>
   </ul>
 </nav>
-<div>
+<div class="section">
   <iframe src="https://www.epam-group.ru/" width="500">
     Your browser does not support HTML5 tags.
   </iframe>
 </div>
-<div>
+<div class="section">
   <figure>
     <img src="images/diagram.png" alt="The Pulpit Rock" width="304" height="228">
     <figcaption>Діаграма</figcaption>
   </figure>
 </div>
-<div id="about-block">
+<div id="about-block" class="section">
   <h3>Про нас</h3>
-  <p>
+  <p class="large-font first-big-letter">
     <i>Lorem ipsum dolor</i> sit amet, <b>consectetur adipiscing elit.</b> Fusce viverra accumsan augue,
     <u>non porttitor enim fermentum et.</u>
     <br>
     <sub>Quisque</sub> dignissim dictum nisl.
     <sup>Vivamus</sup> vestibulum massa in lectus fermentum ornare. Duis nec mi vel ex finibus tempus at id sem. Nullam vitae urna porta, egestas urna non, maximus nibh. Ut id arcu vel erat egestas molestie ac sit amet ante. Phasellus accumsan, purus a vehicula bibendum, dolor mauris finibus nibh, sit amet pellentesque quam nulla quis tellus. Phasellus sed sagittis risus. Aliquam condimentum arcu sit amet accumsan molestie. Suspendisse vel ipsum vel diam mollis molestie. Donec et tellus quis ligula consectetur laoreet. Sed pretium libero sit amet fermentum pellentesque. Maecenas vel mattis felis. Proin ligula sem, tempor non metus sit amet, sollicitudin dapibus felis.
   </p>
-  <p>
+  <p class="middle-font first-big-letter">
     <em>Etiam a convallis enim.</em> Nullam rutrum varius diam eu vehicula.
     <strong>Donec cursus dignissim augue</strong> non pellentesque. Maecenas
     <ins>gravida convallis elementum.</ins>
@@ -57,7 +58,7 @@
     <br><abbr title="Повна Назва компанії Lorem ipsum dolor">Назва компанії</abbr>
     <br>Proin sed faucibus sapien. Nulla ligula orci, dapibus eu justo eget, dapibus placerat nisl. Sed vel ipsum vel nulla blandit ullamcorper. Ut lobortis odio eros, ut euismod ex malesuada et. Proin semper diam vel erat finibus sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur suscipit tortor, sed faucibus nulla vestibulum molestie. Proin at volutpat nisi. Donec eu neque felis.
   </p>
-  <p>
+  <p id="small-font first-big-letter">
     Nulla
     <mark>aliquam</mark>
     eget metus ut bibendum. Morbi id magna sed dui
@@ -67,19 +68,19 @@
     augue sed porta pellentesque. Vivamus imperdiet tincidunt augue, consequat auctor sapien sagittis eu. Quisque ultrices mi massa, ac ultricies eros iaculis vel. Nam ac aliquam felis. Nulla finibus nibh non dui aliquam, id egestas felis eleifend. Fusce vel condimentum orci.
   </p>
 </div>
-<div id="regulatory-authorities-block">
+<div id="regulatory-authorities-block" class="section">
   <h3>Контролюючі органи</h3>
   <a href="https://rada.gov.ua/">парламент</a>,
   <a href="https://www.president.gov.ua/">президент</a>,
   <a href="https://mon.gov.ua/ua">міністерство</a>
 </div>
-<div id="documents-block">
+<div id="documents-block" class="section">
   <h3>Установчі документи</h3>
   <a href="/files/status.txt">Статут</a>,
   <a href="/files/dogovir.txt">Договір</a>,
   <a href="/files/sertificat.txt">Сертифікат</a>
 </div>
-<div id="services-block">
+<div id="services-block" class="section">
   <h3>Послуги</h3>
   <ul>
     <li>Ut id arcu vel erat egestas molestie</li>
@@ -88,7 +89,7 @@
     <li>Proin semper diam vel</li>
   </ul>
 </div>
-<div id="customers-block">
+<div id="customers-block" class="section">
   <h3>Наші замовники</h3>
   <ol>
     <li>Suspendisse</li>
@@ -97,13 +98,13 @@
     <li>Nulla</li>
   </ol>
 </div>
-<div>
+<div class="section">
   <time datetime="10:00">10:00</time>
   -
   <time datetime="18:00">18:00</time>
   кожного дня
 </div>
-<div id="services-more-block">
+<div id="services-more-block" class="section">
   <h3>Послуги (детально)</h3>
   <dl>
     <dt>Lorem ipsum dolor</dt>
@@ -114,7 +115,7 @@
     <dd>Morbi id magna sed dui rhoncus semper vitae eget dolor.</dd>
   </dl>
 </div>
-<div id="finance-block">
+<div id="finance-block" class="section">
   <h3>Фінансові показники</h3>
   <table width="500px" border="1px">
     <caption>Таблиця з фінансовими показниками</caption>
@@ -166,18 +167,18 @@
     </tbody>
   </table>
 </div>
-<div id="contact-block">
+<div id="contact-block" class="section">
   <h3>Контакти</h3>
   <form accept-charset="UTF-8">
     <fieldset>
       <legend>Заповніть форму нижче</legend>
       <label>
         Ім'я
-        <input type="text" name="first_name" placeholder="Ім'я" maxlength="15">
+        <input type="text" name="first_name" placeholder="Ім'я" maxlength="15" autofocus tabindex="0">
       </label>
       <label>
         Прізвище
-        <input type="text" name="last_name" placeholder="Прізвище" maxlength="25">
+        <input type="text" name="last_name" placeholder="Прізвище" maxlength="25" required tabindex="1">
       </label>
       <label>
         По-батькові
@@ -187,11 +188,10 @@
         Місце роботи
         <input type="text" name="workplace" placeholder="Місце роботи" maxlength="25" readonly>
       </label>
-
       <p>Тип запиту</p>
       <label>
         технічна підтримка
-        <input type="radio" name="request_type" value="tech-support" checked>
+        <input type="radio" name="request_type" value="tech-support" checked tabindex="3">
       </label>
       <label>
         підтримка користувача
@@ -211,7 +211,7 @@
       </label>
       <label>
         Текст запиту
-        <textarea name="request-text" cols="30" rows="10" placeholder="Текст запиту"></textarea>
+        <textarea name="request-text" cols="30" rows="10" placeholder="Текст запиту" tabindex="2"></textarea>
       </label>
       <label>
         Дата запиту
@@ -225,9 +225,39 @@
         Стаж користувача
         <input type="number" name="user-experience" placeholder="Стаж користувача" min="0" max="50">
       </label>
+      <label>
+        Країна
+        <input type="text" name="country" pattern="[A-Za-z]{3}" placeholder="Країна">
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" placeholder="Email">
+      </label>
+      <label>
+        Пріоритетність запиту
+        <input type="color" name="priority">
+      </label>
+      <label>
+        Веб-сторінка
+        <input type="url" name="user-url" placeholder="Веб-сторінка">
+      </label>
+      <p contenteditable="true">Редагований текст</p>
       <input type="submit" value="Надіслати запит">
     </fieldset>
   </form>
+  <div>
+    <audio controls>
+      <source src="files/Nyanyanyanyanyanyanya.mp3" type="audio/mp3">
+    </audio>
+  </div>
+  <div>
+    <video controls>
+      <source src="files/nyancat.mp4" type="audio/mp3">
+    </video>
+  </div>
+  <div>
+    <canvas id="canvas" width="500" height="300" border="1px"></canvas>
+  </div>
   <details>
     <summary>&copy; Нестеров, 2020</summary>
     <p>All Rights Reserved.</p>

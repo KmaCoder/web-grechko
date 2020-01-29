@@ -1,0 +1,82 @@
+.large-font {
+  font-size: 1.5em;
+  background: #ced5db;
+}
+
+.middle-font {
+  font-size: 18px;
+  background: rgb(189, 195, 201);
+}
+
+#small-font {
+  font-size: 70%;
+  background: grey;
+}
+
+.first-big-letter:first-letter {
+  font-size: 2em;
+  color: #771918
+}
+
+#services-block li {
+  color: #008700;
+  background: grey;
+}
+
+#services-more-block dt {
+  color: #daba0a;
+  background: #ffef92;
+}
+
+#services-more-block dd {
+  color: #1b73a2;
+  background: #c6eaff;
+}
+
+#regulatory-authorities-block a[href^="gov.ua"] {
+  font-weight: 700;
+  color: #595959;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+nav {
+  margin-bottom: 60px;
+  background: #d8bccb;
+  border: 1px solid #9e8a94
+}
+
+h3 {
+  color: #52134f;
+  background: #e6c9f0;
+}
+
+nav li a {
+  font-size: 1.2em;
+  color: #491e25;
+}
+
+nav li a:hover {
+  font-weight: 500;
+  text-decoration: underline;
+  color: #281014;
+}
+
+nav li a:visited {
+  color: #2651b4;
+}
+
+#finance-block table td {
+  background: #c8c8c8;
+}
+
+#finance-block table th {
+  background: #d1c39c;
+}
+
+#customers-block {
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}

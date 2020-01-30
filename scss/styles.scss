@@ -1,5 +1,21 @@
+$color-dark: #132C55;
+$color-main: #1F4788;
+$color-light: #9ec6e7;
+$color-extra-light: #e3ebf9;
+$color-pink: #F09DF7;
+$color-grey: #989898;
+$color-red: #E93423;
+$color-orange: #F09E38;
+$color-yellow: #FDFC54;
+$color-green: #7BF94C;
+$color-blue: #4191F7;
+$color-violet: #6230F5;
+$color-material: #F6D4A3;
+
 body {
   font-family: sans-serif;
+  background: $color-main;
+  color: $color-extra-light;
 }
 
 html, body {
@@ -12,6 +28,10 @@ html, body {
   box-sizing: border-box;
 }
 
+a {
+  color: $color-light;
+}
+
 .container {
   max-width: 1270px;
   width: 100%;
@@ -22,28 +42,35 @@ html, body {
 .section {
   padding: 20px;
   margin: 50px 0;
-  background: #fdfdfd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: $color-dark;
+  color: $color-extra-light;
+  box-shadow: 2px 2px 15px rgba($color-dark, 0.4);
 }
 
 .large-font {
-  font-size: 1.5em;
-  background: #e4ebf2;
+  font-size: 1.4em;
+  background: rgba($color-extra-light, 0.1);
+  padding: 10px;
+  color: $color-extra-light;
 }
 
 .middle-font {
   font-size: 18px;
-  background: #e4ebf2;
+  background: rgba($color-extra-light, 0.1);
+  padding: 10px;
+  color: $color-extra-light;
 }
 
 #small-font {
   font-size: 80%;
-  background: #e4ebf2;
+  background: rgba($color-extra-light, 0.1);
+  padding: 10px;
+  color: $color-extra-light;
 }
 
 .first-big-letter:first-letter {
   font-size: 2em;
-  color: #771918
+  color: $color-pink;
 }
 
 #hero-block {
@@ -52,47 +79,76 @@ html, body {
 
 #services-block {
   li {
-    color: rgba(0, 0, 0, 1);
-    background: #e4ebf2;
+    color: $color-extra-light;
+    background: none;
   }
 }
 
 #services-more-block {
   dt {
-    color: #daba0a;
-    background: #e4ebf2;
+    color: $color-extra-light;
+    font-weight: 700;
+    font-size: 1.2em;
+    background: none;
+    padding: 10px 0;
   }
 }
 
 #services-more-block {
   dd {
-    color: #1b73a2;
-    background: #c6eaff;
+    color: $color-dark;
+    background: $color-light;
+    padding: 10px;
   }
 }
 
 #regulatory-authorities-block {
-  a[href^="gov.ua"] {
-    font-weight: 700;
-    color: #595959;
+  a[href*="gov.ua"] {
+    font-weight: 400;
+    color: $color-extra-light;
+    text-decoration: none;
+
+    &:visited {
+      color: $color-pink;
+    }
+  }
+}
+
+#documents-block {
+  a {
+    color: $color-extra-light;
+    text-decoration: none;
+
+    &:visited {
+      color: $color-pink;
+    }
   }
 }
 
 #finance-block {
   table {
     td {
-      background: #c8c8c8;
+      background: $color-extra-light;
+      color: $color-dark;
+      padding: 5px;
+
+      &:first-child {
+        font-weight: 700;
+      }
     }
 
     th {
-      background: #d1c39c;
+      background: $color-main;
+      color: $color-extra-light;
+      padding: 5px;
     }
   }
 }
 
 #customers-block {
-  border: 0 solid #000000;
+  border: none;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  height: 100%;
 }
 
 #contact-block {
@@ -102,36 +158,38 @@ html, body {
 }
 
 nav {
-  margin-bottom: 60px;
-  background: #d8bccb;
-  border: 1px solid #9e8a94;
+  margin-bottom: 0;
+  background: $color-dark;
+  border: none;
 
   li a {
-    font-size: 1.2em;
-    color: #491e25;
+    font-size: 1.1em;
+    color: $color-extra-light;
+    text-decoration: none;
 
     &:hover {
       font-weight: 500;
       text-decoration: underline;
-      color: #281014;
+      color: $color-light;
     }
 
     &:visited {
-      color: #2651b4;
+      color: $color-pink;
     }
   }
 }
 
 h3 {
-  color: #52134f;
-  background: #f3e0f9;
+  color: $color-dark;
+  background: $color-light;
   padding: 10px;
+  font-size: 1.3em;
   margin-top: 0;
 }
 
 .column-33 {
   flex: 0 0 33.33%;
-  border: 1px solid black;
+  border: 1px solid rgba($color-light, 0.5);
   padding: 10px;
 
   @media (max-width: 767px) {
@@ -163,6 +221,8 @@ h3 {
   padding: 15px;
   height: 300px;
   margin: 0 auto;
+  background: $color-extra-light;
+  color: $color-dark
 }
 
 figure {
@@ -191,6 +251,7 @@ figure {
   width: 100%;
   max-width: 100%;
   font-family: 'Bangers', cursive;
+  font-size: 1.2em;
 
   img {
     float: left;
@@ -200,7 +261,7 @@ figure {
 }
 
 .task-9-h3 {
-  text-shadow: 1px 1px 2px deeppink;
+  text-shadow: 1px 1px 2px $color-pink;
 }
 
 .task-10 {
@@ -219,7 +280,8 @@ figure {
     }
 
     &:first-child {
-      background: greenyellow;
+      background: $color-material;
+      color: $color-dark;
       border-radius: 10px;
       padding: 15px;
     }
@@ -227,11 +289,13 @@ figure {
     &:nth-child(2) {
       background: url("../images/nyan-small.jpeg") repeat;
       padding: 15px;
+      color: $color-dark;
     }
 
     &:nth-child(3) {
-      background: linear-gradient(green 0%, yellow 30%, blue 100%);
+      background: linear-gradient($color-red 0%, $color-orange 20%, $color-yellow 40%, $color-green 60%, $color-blue 80%, $color-violet 100%);
       padding: 15px;
+      color: $color-dark;
     }
   }
 }
@@ -267,7 +331,7 @@ figure {
 .task-15 {
   width: 100px;
   height: 100px;
-  background: pink;
+  background: $color-pink;
   transition-duration: 0.2s;
 
   &:hover {
@@ -288,8 +352,9 @@ form {
     padding: 15px;
     font-size: 16px;
     margin-top: 5px;
+    background: white;
+    border: 1px solid $color-light;
     border-radius: 5px;
-    border: 1px solid #b4b4b4;
   }
 
   input:not([type=radio]) {
@@ -309,6 +374,7 @@ form {
 
   .form-button {
     background: #d5d8dd;
+
     &:disabled {
       opacity: 0.5;
     }

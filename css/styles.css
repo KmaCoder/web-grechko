@@ -1,5 +1,7 @@
 body {
   font-family: sans-serif;
+  background: #1F4788;
+  color: #e3ebf9;
 }
 
 html, body {
@@ -12,6 +14,10 @@ html, body {
   box-sizing: border-box;
 }
 
+a {
+  color: #9ec6e7;
+}
+
 .container {
   max-width: 1270px;
   width: 100%;
@@ -22,28 +28,35 @@ html, body {
 .section {
   padding: 20px;
   margin: 50px 0;
-  background: #fdfdfd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: #132C55;
+  color: #e3ebf9;
+  box-shadow: 2px 2px 15px rgba(19, 44, 85, 0.4);
 }
 
 .large-font {
-  font-size: 1.5em;
-  background: #e4ebf2;
+  font-size: 1.4em;
+  background: rgba(227, 235, 249, 0.1);
+  padding: 10px;
+  color: #e3ebf9;
 }
 
 .middle-font {
   font-size: 18px;
-  background: #e4ebf2;
+  background: rgba(227, 235, 249, 0.1);
+  padding: 10px;
+  color: #e3ebf9;
 }
 
 #small-font {
   font-size: 80%;
-  background: #e4ebf2;
+  background: rgba(227, 235, 249, 0.1);
+  padding: 10px;
+  color: #e3ebf9;
 }
 
 .first-big-letter:first-letter {
   font-size: 2em;
-  color: #771918;
+  color: #F09DF7;
 }
 
 #hero-block {
@@ -51,35 +64,59 @@ html, body {
 }
 
 #services-block li {
-  color: black;
-  background: #e4ebf2;
+  color: #e3ebf9;
+  background: none;
 }
 
 #services-more-block dt {
-  color: #daba0a;
-  background: #e4ebf2;
+  color: #e3ebf9;
+  font-weight: 700;
+  font-size: 1.2em;
+  background: none;
+  padding: 10px 0;
 }
 
 #services-more-block dd {
-  color: #1b73a2;
-  background: #c6eaff;
+  color: #132C55;
+  background: #9ec6e7;
+  padding: 10px;
 }
 
-#regulatory-authorities-block a[href^="gov.ua"] {
-  font-weight: 700;
-  color: #595959;
+#regulatory-authorities-block a[href*="gov.ua"] {
+  font-weight: 400;
+  color: #e3ebf9;
+  text-decoration: none;
+}
+#regulatory-authorities-block a[href*="gov.ua"]:visited {
+  color: #F09DF7;
+}
+
+#documents-block a {
+  color: #e3ebf9;
+  text-decoration: none;
+}
+#documents-block a:visited {
+  color: #F09DF7;
 }
 
 #finance-block table td {
-  background: #c8c8c8;
+  background: #e3ebf9;
+  color: #132C55;
+  padding: 5px;
+}
+#finance-block table td:first-child {
+  font-weight: 700;
 }
 #finance-block table th {
-  background: #d1c39c;
+  background: #1F4788;
+  color: #e3ebf9;
+  padding: 5px;
 }
 
 #customers-block {
-  border: 0 solid #000000;
+  border: none;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  height: 100%;
 }
 
 #contact-block details {
@@ -87,33 +124,35 @@ html, body {
 }
 
 nav {
-  margin-bottom: 60px;
-  background: #d8bccb;
-  border: 1px solid #9e8a94;
+  margin-bottom: 0;
+  background: #132C55;
+  border: none;
 }
 nav li a {
-  font-size: 1.2em;
-  color: #491e25;
+  font-size: 1.1em;
+  color: #e3ebf9;
+  text-decoration: none;
 }
 nav li a:hover {
   font-weight: 500;
   text-decoration: underline;
-  color: #281014;
+  color: #9ec6e7;
 }
 nav li a:visited {
-  color: #2651b4;
+  color: #F09DF7;
 }
 
 h3 {
-  color: #52134f;
-  background: #f3e0f9;
+  color: #132C55;
+  background: #9ec6e7;
   padding: 10px;
+  font-size: 1.3em;
   margin-top: 0;
 }
 
 .column-33 {
   flex: 0 0 33.33%;
-  border: 1px solid black;
+  border: 1px solid rgba(158, 198, 231, 0.5);
   padding: 10px;
 }
 @media (max-width: 767px) {
@@ -150,6 +189,8 @@ h3 {
   padding: 15px;
   height: 300px;
   margin: 0 auto;
+  background: #e3ebf9;
+  color: #132C55;
 }
 
 figure {
@@ -178,6 +219,7 @@ figure {
   width: 100%;
   max-width: 100%;
   font-family: "Bangers", cursive;
+  font-size: 1.2em;
 }
 .task-8-div img {
   float: left;
@@ -186,7 +228,7 @@ figure {
 }
 
 .task-9-h3 {
-  text-shadow: 1px 1px 2px deeppink;
+  text-shadow: 1px 1px 2px #F09DF7;
 }
 
 .task-10 {
@@ -208,17 +250,20 @@ figure {
   }
 }
 .task-10-col:first-child {
-  background: greenyellow;
+  background: #F6D4A3;
+  color: #132C55;
   border-radius: 10px;
   padding: 15px;
 }
 .task-10-col:nth-child(2) {
   background: url("../images/nyan-small.jpeg") repeat;
   padding: 15px;
+  color: #132C55;
 }
 .task-10-col:nth-child(3) {
-  background: linear-gradient(green 0%, yellow 30%, blue 100%);
+  background: linear-gradient(#E93423 0%, #F09E38 20%, #FDFC54 40%, #7BF94C 60%, #4191F7 80%, #6230F5 100%);
   padding: 15px;
+  color: #132C55;
 }
 
 .task-14 div {
@@ -247,7 +292,7 @@ figure {
 .task-15 {
   width: 100px;
   height: 100px;
-  background: pink;
+  background: #F09DF7;
   transition-duration: 0.2s;
 }
 .task-15:hover {
@@ -265,8 +310,9 @@ form input:not([type=radio]), form textarea {
   padding: 15px;
   font-size: 16px;
   margin-top: 5px;
+  background: white;
+  border: 1px solid #9ec6e7;
   border-radius: 5px;
-  border: 1px solid #b4b4b4;
 }
 form input:not([type=radio]) {
   height: 40px;

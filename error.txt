@@ -1,79 +1,55 @@
+Error: Bad value 100% for attribute width on element iframe: Expected a digit but saw % instead.
+
+From line 57, column 7; to line 57, column 75
+
+0">↩      <iframe src="https://www.epam-group.ru/" width="100%" height="450px">↩
+
+Error: Bad value 450px for attribute height on element iframe: Expected a digit but saw p instead.
+
+From line 57, column 7; to line 57, column 75
+
+0">↩      <iframe src="https://www.epam-group.ru/" width="100%" height="450px">↩
+
 Error: Text not allowed in element iframe in this context.
 
-From line 32, column 1; to line 32, column 45
+From line 58, column 1; to line 58, column 49
 
-th="500">↩    Your browser does not support HTML5 tags.↩  </i
+="450px">↩        Your browser does not support HTML5 tags.↩
 
 Content model for element iframe:
 Nothing.
-Error: Bad value 10:00-18:00 for attribute datetime on element time: The literal did not satisfy the time-datetime format.
+Error: Bad value 100% for attribute width on element video: Expected a digit but saw % instead.
 
-From line 101, column 3; to line 101, column 31
+From line 62, column 7; to line 62, column 35
 
->↩<div>↩  <time datetime="10:00-18:00">10:00-
+0">↩      <video controls width="100%">↩
+
+Error: Bad value 100% for attribute width on element img: Expected a digit but saw % instead.
+
+From line 72, column 7; to line 72, column 71
+
+re>↩      <img src="images/diagram.png" alt="The Pulpit Rock" width="100%">↩
 
 Error: The width attribute on the table element is obsolete. Use CSS instead.
 
-From line 116, column 3; to line 116, column 36
+From line 149, column 5; to line 149, column 37
 
-ки</h3>↩  <table width="500px" border="1px">↩    <
+</h3>↩    <table width="100%" border="1px">↩
 
 Error: The border attribute on the table element is obsolete. Use CSS instead.
 
-From line 116, column 3; to line 116, column 36
+From line 149, column 5; to line 149, column 37
 
-ки</h3>↩  <table width="500px" border="1px">↩    <
-
-Warning: A table row was 4 columns wide, which is less than the column count established by the first row (8).
-
-From line 131, column 19; to line 132, column 9
-
-d>700</td>↩    </tr>↩    <
-
-Warning: A table row was 4 columns wide, which is less than the column count established by the first row (8).
-
-From line 137, column 20; to line 138, column 9
-
->1000</td>↩    </tr>↩    <
-
-Warning: A table row was 4 columns wide, which is less than the column count established by the first row (8).
-
-From line 143, column 19; to line 144, column 9
-
-d>500</td>↩    </tr>↩    <
-
-Warning: A table row was 4 columns wide, which is less than the column count established by the first row (8).
-
-From line 149, column 19; to line 150, column 9
-
-d>900</td>↩    </tr>↩    <
-
-Warning: A table row was 4 columns wide, which is less than the column count established by the first row (8).
-
-From line 155, column 19; to line 156, column 9
-
-d>700</td>↩    </tr>↩    <
-
-Warning: A table row was 4 columns wide, which is less than the column count established by the first row (8).
-
-From line 161, column 20; to line 162, column 9
-
->1100</td>↩    </tr>↩    <
-
-Error: Table column 6 established by element th has no cells beginning in it.
-
-From line 121, column 34; to line 122, column 22
-
-оходи</th>↩      <th colspan="2">Витрат
-
-Error: Table column 8 established by element th has no cells beginning in it.
-
-From line 122, column 35; to line 123, column 22
-
-трати</th>↩      <th colspan="2">Прибут
+</h3>↩    <table width="100%" border="1px">↩
 
 Warning: The date input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.
 
-From line 215, column 9; to line 215, column 47
+From line 341, column 11; to line 341, column 49
 
-у↩        <input type="date" name="request-date">↩
+          <input type="date" name="request-date">↩
+
+Warning: The color input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.
+
+From line 361, column 11; to line 361, column 46
+
+          <input type="color" name="priority">↩

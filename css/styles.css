@@ -31,6 +31,7 @@ a {
   background: #132C55;
   color: #e3ebf9;
   box-shadow: 2px 2px 15px rgba(19, 44, 85, 0.4);
+  border-radius: 8px;
 }
 
 .large-font {
@@ -135,8 +136,9 @@ nav li a {
 }
 nav li a:hover {
   font-weight: 500;
-  text-decoration: underline;
+  text-decoration: none;
   color: #9ec6e7;
+  background: #1F4788;
 }
 nav li a:visited {
   color: #F09DF7;
@@ -148,6 +150,7 @@ h3 {
   padding: 10px;
   font-size: 1.3em;
   margin-top: 0;
+  border-radius: 4px;
 }
 
 .column-33 {
@@ -332,6 +335,102 @@ form .form-button {
 }
 form .form-button:disabled {
   opacity: 0.5;
+}
+
+.div-class-0, .div-class-3, .div-class-2, .div-class-1 {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #F09DF7;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.div-class-1 {
+  background-color: #E93423;
+}
+
+.div-class-2 {
+  background-color: #F09E38;
+}
+
+.div-class-3 {
+  background-color: #FDFC54;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.gallery__image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms ease;
+  width: 33%;
+  height: 300px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .gallery__image {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .gallery__image {
+    width: 100%;
+  }
+}
+.gallery__image > * {
+  opacity: 0;
+}
+.gallery__image:hover > * {
+  opacity: 1;
+}
+.gallery__image__title {
+  padding: 5px 14px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.gallery__image__text {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 14px;
+}
+.gallery__image:first-child {
+  background-image: url("../images/1.jpg");
+}
+.gallery__image:first-child:hover {
+  z-index: 200;
+  transform: scale(1.4);
+}
+.gallery__image:nth-child(2) {
+  background-image: url("../images/2.jpg");
+}
+.gallery__image:nth-child(2):hover {
+  z-index: 200;
+  transform: rotate(10deg);
+}
+.gallery__image:nth-child(3) {
+  background-image: url("../images/3.jpg");
+}
+.gallery__image:nth-child(3):hover {
+  background-image: url("../images/3-2.jpg");
+}
+.gallery__image:nth-child(4) {
+  background-image: url("../images/4.jpg");
+}
+.gallery__image:nth-child(5) {
+  background-image: url("../images/5.jpg");
+}
+.gallery__image:nth-child(6) {
+  background-image: url("../images/6.png");
 }
 
 /*# sourceMappingURL=styles.css.map */

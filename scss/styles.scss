@@ -12,6 +12,10 @@ $color-blue: #4191F7;
 $color-violet: #6230F5;
 $color-material: #F6D4A3;
 
+@mixin divBorderRadiusMixin($radius:8px) {
+  border-radius: $radius;
+}
+
 body {
   font-family: sans-serif;
   background: $color-main;
@@ -45,6 +49,7 @@ a {
   background: $color-dark;
   color: $color-extra-light;
   box-shadow: 2px 2px 15px rgba($color-dark, 0.4);
+  @include divBorderRadiusMixin;
 }
 
 .large-font {
@@ -169,8 +174,9 @@ nav {
 
     &:hover {
       font-weight: 500;
-      text-decoration: underline;
+      text-decoration: none;
       color: $color-light;
+      background: $color-main;
     }
 
     &:visited {
@@ -185,6 +191,7 @@ h3 {
   padding: 10px;
   font-size: 1.3em;
   margin-top: 0;
+  border-radius: 4px;
 }
 
 .column-33 {
@@ -377,6 +384,119 @@ form {
 
     &:disabled {
       opacity: 0.5;
+    }
+  }
+}
+
+.div-class-0 {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid $color-pink;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.div-class-1 {
+  @extend .div-class-0;
+  background-color: $color-red;
+}
+
+.div-class-2 {
+  @extend .div-class-0;
+  background-color: $color-orange;
+}
+
+.div-class-3 {
+  @extend .div-class-0;
+  background-color: $color-yellow;
+}
+
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms ease;
+    width: 33%;
+    height: 300px;
+    object-fit: cover;
+
+    @media (max-width: 768px) {
+      width: 50%;
+    }
+
+    @media (max-width: 450px) {
+      width: 100%;
+    }
+
+
+    & > * {
+      opacity: 0;
+    }
+
+    &:hover > * {
+      opacity: 1;
+    }
+
+    &__title {
+      padding: 5px 14px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+
+    &__text {
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 14px;
+    }
+
+    &:first-child {
+      background-image: url("../images/1.jpg");
+
+      &:hover {
+        z-index: 200;
+        transform: scale(1.4);
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: url("../images/2.jpg");
+
+      &:hover {
+        z-index: 200;
+        transform: rotate(10deg);
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url("../images/3.jpg");
+
+      &:hover {
+        background-image: url("../images/3-2.jpg");
+      }
+    }
+
+    &:nth-child(4) {
+      background-image: url("../images/4.jpg");
+    }
+
+    &:nth-child(5) {
+      background-image: url("../images/5.jpg");
+    }
+
+    &:nth-child(6) {
+      background-image: url("../images/6.png");
     }
   }
 }

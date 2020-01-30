@@ -1,0 +1,316 @@
+body {
+  font-family: sans-serif;
+}
+
+html, body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1270px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 20px;
+  margin: 50px 0;
+  background: #fdfdfd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.large-font {
+  font-size: 1.5em;
+  background: #e4ebf2;
+}
+
+.middle-font {
+  font-size: 18px;
+  background: #e4ebf2;
+}
+
+#small-font {
+  font-size: 80%;
+  background: #e4ebf2;
+}
+
+.first-big-letter:first-letter {
+  font-size: 2em;
+  color: #771918
+}
+
+#hero-block {
+  text-align: center;
+}
+
+#services-block {
+  li {
+    color: rgba(0, 0, 0, 1);
+    background: #e4ebf2;
+  }
+}
+
+#services-more-block {
+  dt {
+    color: #daba0a;
+    background: #e4ebf2;
+  }
+}
+
+#services-more-block {
+  dd {
+    color: #1b73a2;
+    background: #c6eaff;
+  }
+}
+
+#regulatory-authorities-block {
+  a[href^="gov.ua"] {
+    font-weight: 700;
+    color: #595959;
+  }
+}
+
+#finance-block {
+  table {
+    td {
+      background: #c8c8c8;
+    }
+
+    th {
+      background: #d1c39c;
+    }
+  }
+}
+
+#customers-block {
+  border: 0 solid #000000;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#contact-block {
+  details {
+    margin: 30px 0 10px;
+  }
+}
+
+nav {
+  margin-bottom: 60px;
+  background: #d8bccb;
+  border: 1px solid #9e8a94;
+
+  li a {
+    font-size: 1.2em;
+    color: #491e25;
+
+    &:hover {
+      font-weight: 500;
+      text-decoration: underline;
+      color: #281014;
+    }
+
+    &:visited {
+      color: #2651b4;
+    }
+  }
+}
+
+h3 {
+  color: #52134f;
+  background: #f3e0f9;
+  padding: 10px;
+  margin-top: 0;
+}
+
+.column-33 {
+  flex: 0 0 33.33%;
+  border: 1px solid black;
+  padding: 10px;
+
+  @media (max-width: 767px) {
+    flex: 50%;
+  }
+  @media (max-width: 576px) {
+    flex: 100%;
+  }
+}
+
+.column-50 {
+  flex: 0 0 50%;
+  border: 1px solid black;
+  @media (max-width: 576px) {
+    flex: 100%;
+  }
+}
+
+.row-top, .row-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.overflow-div {
+  overflow-y: scroll;
+  border: 1px solid black;
+  max-width: 700px;
+  width: 100%;
+  padding: 15px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+figure {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.div-with-bg {
+  background: url("../images/nyancat.jpg") no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  border: 1px solid black;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.gazeta-div {
+  column-count: 4;
+  column-gap: 20px;
+  text-align: justify;
+}
+
+.task-8-div {
+  width: 100%;
+  max-width: 100%;
+  font-family: 'Bangers', cursive;
+
+  img {
+    float: left;
+    width: 250px;
+    padding: 0 10px 10px 0;
+  }
+}
+
+.task-9-h3 {
+  text-shadow: 1px 1px 2px deeppink;
+}
+
+.task-10 {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+
+  &-col {
+    flex: 0 0 33%;
+
+    @media (max-width: 767px) {
+      flex: 50%;
+    }
+    @media (max-width: 576px) {
+      flex: 100%;
+    }
+
+    &:first-child {
+      background: greenyellow;
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    &:nth-child(2) {
+      background: url("../images/nyan-small.jpeg") repeat;
+      padding: 15px;
+    }
+
+    &:nth-child(3) {
+      background: linear-gradient(green 0%, yellow 30%, blue 100%);
+      padding: 15px;
+    }
+  }
+}
+
+.task-14 {
+  div {
+    transition-duration: 0.2s;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+
+    &:nth-child(1):hover {
+      transform: translateY(15px);
+    }
+
+    &:nth-child(2):hover {
+      transform: rotate(20deg);
+    }
+
+    &:nth-child(3):hover {
+      transform: scale(1.4);
+    }
+  }
+}
+
+#canvas {
+  border: 1px solid black;
+  width: 100%;
+  height: 400px;
+}
+
+.task-15 {
+  width: 100px;
+  height: 100px;
+  background: pink;
+  transition-duration: 0.2s;
+
+  &:hover {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+form {
+  label {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  input:not([type=radio]), textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #b4b4b4;
+  }
+
+  input:not([type=radio]) {
+    height: 40px;
+  }
+
+  button {
+    background: #c5d7ec;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #7d9fc0;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+
+  .form-button {
+    background: #d5d8dd;
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}

@@ -100,6 +100,9 @@ a {
   color: #F09DF7;
 }
 
+#finance-block {
+  overflow-x: scroll;
+}
 #finance-block table td {
   background: #e3ebf9;
   color: #132C55;
@@ -376,12 +379,12 @@ form .form-button:disabled {
   height: 300px;
   object-fit: cover;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .gallery__image {
     width: 50%;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 576px) {
   .gallery__image {
     width: 100%;
   }
@@ -404,33 +407,33 @@ form .form-button:disabled {
   font-size: 14px;
 }
 .gallery__image:first-child {
-  background-image: url("../images/1.jpg");
+  background-image: url("../images/gallery-1.jpeg");
 }
 .gallery__image:first-child:hover {
   z-index: 200;
   transform: scale(1.4);
 }
 .gallery__image:nth-child(2) {
-  background-image: url("../images/2.jpg");
+  background-image: url("../images/gallery-2.jpeg");
 }
 .gallery__image:nth-child(2):hover {
   z-index: 200;
   transform: rotate(10deg);
 }
 .gallery__image:nth-child(3) {
-  background-image: url("../images/3.jpg");
+  background-image: url("../images/gallery-3.jpg");
 }
 .gallery__image:nth-child(3):hover {
-  background-image: url("../images/3-2.jpg");
+  background-image: url("../images/gallery-3-2.jpg");
 }
 .gallery__image:nth-child(4) {
-  background-image: url("../images/4.jpg");
+  background-image: url("../images/gallery-4.jpg");
 }
 .gallery__image:nth-child(5) {
-  background-image: url("../images/5.jpg");
+  background-image: url("../images/gallery-5.jpg");
 }
 .gallery__image:nth-child(6) {
-  background-image: url("../images/6.png");
+  background-image: url("../images/gallery-6.jpeg");
 }
 
 /*# sourceMappingURL=styles.css.map */

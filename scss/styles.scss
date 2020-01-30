@@ -131,6 +131,7 @@ a {
 }
 
 #finance-block {
+  overflow-x: scroll;
   table {
     td {
       background: $color-extra-light;
@@ -430,11 +431,11 @@ form {
     height: 300px;
     object-fit: cover;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       width: 50%;
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 576px) {
       width: 100%;
     }
 
@@ -461,7 +462,7 @@ form {
     }
 
     &:first-child {
-      background-image: url("../images/1.jpg");
+      background-image: url("../images/gallery-1.jpeg");
 
       &:hover {
         z-index: 200;
@@ -470,7 +471,7 @@ form {
     }
 
     &:nth-child(2) {
-      background-image: url("../images/2.jpg");
+      background-image: url("../images/gallery-2.jpeg");
 
       &:hover {
         z-index: 200;
@@ -479,23 +480,23 @@ form {
     }
 
     &:nth-child(3) {
-      background-image: url("../images/3.jpg");
+      background-image: url("../images/gallery-3.jpg");
 
       &:hover {
-        background-image: url("../images/3-2.jpg");
+        background-image: url("../images/gallery-3-2.jpg");
       }
     }
 
     &:nth-child(4) {
-      background-image: url("../images/4.jpg");
+      background-image: url("../images/gallery-4.jpg");
     }
 
     &:nth-child(5) {
-      background-image: url("../images/5.jpg");
+      background-image: url("../images/gallery-5.jpg");
     }
 
     &:nth-child(6) {
-      background-image: url("../images/6.png");
+      background-image: url("../images/gallery-6.jpeg");
     }
   }
 }

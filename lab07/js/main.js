@@ -6,13 +6,9 @@ function isNum(num) {
   return !isNaN(num)
 }
 
-// For some reason, the fiddle says "press is not defined" if
-// I declare the function as "function press(arg)".  Might just
-// be a jsfiddle thing?  *shrug*
 window.press = function (what) {
   // if a numeral
   if (isNum(what.value)) {
-    // use === instead of == to make sure the value is exactly "0" and not "0."
     if ($('display').innerHTML === "0")
       $('display').innerHTML = what.value
     else

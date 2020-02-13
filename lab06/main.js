@@ -45,7 +45,7 @@ function squareRoot(value, precision) {
   return result
 }
 
-function area(a, n) {
+const area = function (a, n) {
   return n * a * a / (4 * Math.tan(1 / n * Math.PI))
 }
 
@@ -85,7 +85,7 @@ const patients = [
   new Patient("Danica", "Pham", "Arooj", "Address 10", 123465, "Virus 3")
 ]
 
-function addPatientsToHtml(data) {
+const addPatientsToHtml = (data) => {
   const html = data.map(p => p.toHtml())
   $(".patients").html(html)
 }

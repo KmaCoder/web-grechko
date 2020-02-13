@@ -1,0 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono|Play);
+
+#case {
+  padding: 0.5em;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.7);
+  width: 26em;
+
+  text-align: right;
+  border-radius: 6px;
+
+  /* for draggable element code */
+  position: fixed;
+  left: calc(50% - 13em);
+  top: 10em;
+  z-index: 1000;
+
+  /* prevent highlighting by user selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#case.grab {
+  cursor: grab;
+}
+
+#case.grabbing {
+  cursor: grabbing;
+}
+
+#outer-display {
+  width: 100%;
+  height: 3em;
+  background-color: #657e7e;
+  overflow: hidden;
+  text-align: right;
+  white-space: nowrap;
+  margin: 0 auto 10px;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+#display {
+  float: right;
+  font-family: "Share Tech Mono", serif;
+  font-size: 2.3em;
+  padding: 0.2em 0.1em;
+  cursor: text;
+
+  /* allow user to highlight display */
+  /*-webkit-touch-callout: text;*/
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+#keypad button {
+  padding: 10px 25px;
+  width: 4.85em;
+  cursor: pointer;
+  font-family: Play, serif;
+  font-size: 1.3em;
+  color: white;
+  background-color: rgba(33, 33, 33, 0.99);
+  border-color: #333;
+  text-decoration: none;
+}
+
+#keypad button[value="←"], #keypad button[value="="] {
+  font-size: 2em;
+  width: 6.43em;
+  margin-top: 10px;
+}

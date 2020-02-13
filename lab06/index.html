@@ -3,8 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <title>Lab 06</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+<style>
+  .form {
+    margin-bottom: 50px;
+  }
+</style>
 <body>
+<h1>Task 1</h1>
+<form id="task1-form" class="form">
+  <input type="text" placeholder="Enter words" name="s">
+  <input type="number" placeholder="Enter word number" name="n" value="0" required min="0">
+  <button type="submit">Submit</button>
+  <div class="result"></div>
+</form>
+
+<h1>Task 2</h1>
+<form id="task2-form" class="form">
+  <input type="number" placeholder="x1" name="x1">
+  <input type="number" placeholder="x2" name="x2">
+  <input type="number" placeholder="x3" name="x3">
+  <button type="submit">Submit</button>
+  <div class="result"></div>
+</form>
+
+<h1>Task 3</h1>
+<form id="task3-form" class="form">
+  <input type="number" placeholder="x" name="x" step="0.01">
+  <input type="number" placeholder="n" name="n">
+  <button type="submit">Submit</button>
+  <div>
+    <span>Taylor method: </span>
+    <span class="result"></span>
+  </div>
+  <div>
+    <span>Math.sqrt: </span>
+    <span class="result-2"></span>
+  </div>
+</form>
+
+<h1>Task 4</h1>
+<form id="task4-form" class="form">
+  <input type="number" placeholder="a" name="a">
+  <input type="number" placeholder="n" name="n">
+  <button type="submit">Submit</button>
+  <div class="result"></div>
+</form>
+
+<h1>Task 5</h1>
+<form id="task5-form" class="form">
+  <input type="text" placeholder="Find by diagnosis" name="diagnosis">
+  <input type="number" placeholder="Med card from" name="med_card_from">
+  <input type="number" placeholder="Med card to" name="med_card_to">
+  <button type="submit">Submit</button>
+</form>
+<table border="1">
+  <thead>
+  <tr style="background: #d7d7d7">
+    <td>First Name</td>
+    <td>Last Name</td>
+    <td>Middle Name</td>
+    <td>Address</td>
+    <td>Med card number</td>
+    <td>Diagnosis</td>
+  </tr>
+  </thead>
+  <tbody class="patients">
+
+  </tbody>
+</table>
+
 <script src="main.js"></script>
+<script src="formSubmittor.js"></script>
 </body>
 </html>
